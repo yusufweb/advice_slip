@@ -33,10 +33,13 @@ class App extends Component {
   render() {
     const {id , advice} = this.state;
     return (
-      <div className="App">
-        <p>{id}</p>
-        <p>{advice}</p>
-      <button onClick={this.moreAdvice}>more advice</button>
+      <div className="slip">
+        <p>Advice #{id}</p>
+        <p>"{advice}"</p>
+        <img src="/image/pattern-divider-mobile.svg" alt="" />
+      <button onClick={this.moreAdvice}>
+        <img src="/image/icon-dice.svg" alt="" />
+      </button>
       </div>
   );
   }
