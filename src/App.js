@@ -34,12 +34,12 @@ class App extends Component {
     const {id , advice} = this.state;
     return (
       <div className="slip">
-        <p>Advice #{id}</p>
-        <p>"{advice}"</p>
+        <p className="slip-id">Advice #{id}</p>
+        <p className="slip-advice">"{advice}"</p>
         <img src="/image/pattern-divider-mobile.svg" alt="" />
-      <button onClick={this.moreAdvice}>
-        <img src="/image/icon-dice.svg" alt="" />
-      </button>
+        <button onClick={this.moreAdvice}>
+          <img src="/image/icon-dice.svg" alt="" />
+        </button>
       </div>
   );
   }
