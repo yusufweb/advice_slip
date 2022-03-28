@@ -66,4 +66,5 @@ img {
 
 .slip-btn:hover {
   box-shadow: 0 0 22px hsl(150, 100%, 66%);
+  cursor: pointer;
 }
