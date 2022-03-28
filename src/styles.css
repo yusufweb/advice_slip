@@ -20,11 +20,6 @@ body {
   align-items: center;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
 .slip {
   width: 450px;
   height: auto;
@@ -49,6 +44,8 @@ img {
 
 .divider {
   margin: 2em 0;
+  width: 100%;
+  display: block;
 }
 
 .slip-btn {
