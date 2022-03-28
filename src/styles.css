@@ -9,6 +9,7 @@
 html {
   font-size: 1.125rem;
   line-height: 1.7;
+  font-family: sans-serif;
 }
 
 body {
@@ -19,10 +20,51 @@ body {
   align-items: center;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .slip {
-  width: 420px;
+  width: 450px;
+  height: auto;
   background-color: hsl(217, 19%, 24%);
   border-radius: 10px;
   padding: 2em;
   text-align: center;
+  position: relative;
+}
+
+.slip-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px; 
+}
+
+.slip-advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.5rem;
+}
+
+.divider {
+  margin: 2em 0;
+}
+
+.slip-btn {
+  position: absolute;
+  bottom: -30px;
+  left: 200px;
+  right: 0;
+  background-color: hsl(150, 100%, 66%);
+  border: 0;
+  outline: 0;
+  padding: 1.4em;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.slip-btn:hover {
+  box-shadow: 0 0 22px hsl(150, 100%, 66%);
+  cursor: pointer;
 }

@@ -35,11 +35,16 @@ class App extends Component {
     return (
       <div className="slip">
         <p className="slip-id">Advice #{id}</p>
-        <p className="slip-advice">"{advice}"</p>
-        <img src="/image/pattern-divider-mobile.svg" alt="" />
-        <button onClick={this.moreAdvice}>
-          <img src="/image/icon-dice.svg" alt="" />
-        </button>
+        <p className="slip-advice">"yesterday is history, today is a gift, tommorrow is mistery."</p>
+        <picture>
+          <source media="(min-width: 768px)" srcSet="/image/pattern-divider-desktop.svg" />
+          <img className="divider" src="/image/pattern-divider-mobile.svg" alt="divider mobile" />
+        </picture>
+        <div>
+          <button onClick={this.moreAdvice} className="slip-btn">
+            <img src="/image/icon-dice.svg" alt="geneate advice button" />
+          </button>
+        </div>
       </div>
   );
   }
