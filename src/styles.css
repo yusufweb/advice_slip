@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
 *,
 *::before,
 *::after {
@@ -9,7 +11,6 @@
 html {
   font-size: 1.125rem;
   line-height: 1.7;
-  font-family: sans-serif;
 }
 
 body {
@@ -18,10 +19,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Manrope', sans-serif;
 }
 
 .slip {
-  width: 450px;
+  width: 330px;
   height: auto;
   background-color: hsl(217, 19%, 24%);
   border-radius: 10px;
@@ -35,11 +37,13 @@ body {
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 3px; 
+  margin-bottom: 2em;
 }
 
 .slip-advice {
   color: hsl(193, 38%, 86%);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .divider {
@@ -51,12 +55,12 @@ body {
 .slip-btn {
   position: absolute;
   bottom: -30px;
-  left: 200px;
+  left: 140px;
   right: 0;
   background-color: hsl(150, 100%, 66%);
   border: 0;
   outline: 0;
-  padding: 1.4em;
+  padding: 1.2em;
   border-radius: 100px;
   cursor: pointer;
 }
@@ -64,4 +68,14 @@ body {
 .slip-btn:hover {
   box-shadow: 0 0 22px hsl(150, 100%, 66%);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .slip {
+    width: 430px;
+  }
+
+  .slip-btn {
+    left: 190px;
+  }
 }

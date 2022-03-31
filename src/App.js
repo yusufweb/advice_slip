@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="slip">
         <p className="slip-id">Advice #{id}</p>
-        <p className="slip-advice">"yesterday is history, today is a gift, tommorrow is mistery."</p>
+        <p className="slip-advice">"{advice}"</p>
         <picture>
           <source media="(min-width: 768px)" srcSet="/image/pattern-divider-desktop.svg" />
           <img className="divider" src="/image/pattern-divider-mobile.svg" alt="divider mobile" />
