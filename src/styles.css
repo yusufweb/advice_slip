@@ -53,6 +53,7 @@ body {
 }
 
 .slip-btn {
+  width: 60px;
   position: absolute;
   bottom: -30px;
   left: 140px;
